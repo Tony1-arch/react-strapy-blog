@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-grow: 1;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 50px;
+    background:  linear-gradient(rgba(166, 163, 206, 0.9),rgba(143, 162, 190, 0.411));
+}
+.container .card{
+    height: 100%;
+    width: 30%;
+    padding: 12px 18px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+ .card .media {
+     background-size: cover;
+     height: 155px;
+     display: flex;
+     margin-bottom: 60px;
+     align-content: center;
+     justify-content: center;
+     justify-items: center;
+     align-items: center;
+}
+.image img {
+    height: 150px;
+    
+    width: 150px;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.card h2{
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.card p{
+    line-height: 29px;
+}
+.card a {
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 20px 48px;
+    padding-top: 10px;
+    height: 40px;
+}
+.heading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 49px 30px;
+}
+.heading h1{
+    color: blueviolet;
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: all 1s ease;
+    color: white;
+    background-color: rgb(99, 153, 160);
+    cursor: pointer;
+}
+@media screen and (max-width: 975px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .card{
+        height: 100%;
+        width: 80%;
+        padding: 19px 28px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+    .heading {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .heading h1{
+        padding: 10px;
+        line-height: 50px;
+        color: blueviolet;
+        text-align: center;
+        flex-direction: column;
+        
+    }
+}

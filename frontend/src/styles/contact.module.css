@@ -1,0 +1,125 @@
+.container{
+  width: 100%;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  background-image:  url( 'https://image.cnbcfm.com/api/v1/image/106869987-1618795805885-gettyimages-1312630032-sb3_5306_2021041510407047.jpeg?v=1618795885');
+  flex-grow: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  background-attachment: fixed;
+  backdrop-filter: blur (100px);
+  
+}
+
+
+.content {
+  
+  box-sizing: border-box;
+  width: 40%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.label {
+  margin: 20px 0 4px 0;
+  font-weight: 900;
+  color:black;
+  margin-left: 2px;
+
+  
+}
+.input{
+  height: 40px;
+  padding-left: 12px;
+  border: 1px solid #777;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: silver;
+  
+}
+.errors{
+
+  color: red;
+}
+.heading{
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 8px 5px;
+  border: 1px solid black;
+  background-color: silver;
+  border-radius: 10px;
+  text-align: center;
+  color: blue;
+  text-transform: uppercase;
+ 
+}
+.btn{
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: cadetblue;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+}
+.message{
+  padding-left: 12px;
+  height: 110px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 1px solid #777;
+  background-color: silver;
+}
+@media(max-width: 767px){
+  .container .content {
+    height: 100vh;
+  }
+  .label {
+    margin: 30px 0 9px 0;
+    font-weight: 700;
+    color:black;
+    margin-left: 2px;
+  
+    
+  }
+  .input{
+    height: 30px;
+    width: 100%;
+    padding-left: 12px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: silver;
+    
+  }
+  .heading{
+    margin-left: 5px;
+    margin-right: 120px;
+    margin-top: 20px;
+    padding: 9px 5px;
+    border: 1px solid black;
+    background-color: silver;
+    border-radius: 10px;
+    text-align: center;
+    color: blue;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+   
+  }
+  .message{
+    padding-left: 12px;
+    height: 110px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #777;
+    background-color: silver;
+    width: 100%;
+  }
+}

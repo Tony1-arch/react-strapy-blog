@@ -1,0 +1,136 @@
+ .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+   
+ }
+
+ .row {
+   width: 100%;
+   margin: 0 auto;
+   align-items: center;
+   padding: 30px;
+ }
+ .row h1{
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 40px;
+   margin-bottom: 10px;
+   color: blueviolet;
+ }
+ .card{
+   width: inherit;
+   border: 1px solid #f1f1f1;
+   align-items: center;
+   align-content: center;
+ }
+ .rating {
+   display: flex;
+   background-color: lightblue;
+   height: 95px;
+   align-items: center;
+   text-align: center;
+   align-content: center;
+   margin-bottom: 30px;
+   margin-top: 90px;
+   border-radius: 10px;
+ }
+ .rating h2{
+  color: blue;
+  border-radius: 20%;
+  align-items: center;
+  align-content: center;
+  background-color: #ffff;
+  margin-left: 60px;
+  padding: 30px;
+  border: 3px solid lightseagreen ;
+ }
+ .rating h3 {
+   flex: 1;
+   color:blue;
+   cursor: pointer;
+   text-transform: uppercase;
+ }
+ .content{
+   height: 120px;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 50px;
+ }
+ .content small{
+   border: 2px solid white;
+   height: 45px;
+   border-top: 50px;
+   margin-bottom: 20px;
+   font-size: 20px;
+   font-family: 100;
+   line-height: 20px ;
+   background-color: yellow;
+   padding-left: 1100px;
+   text-transform: uppercase;
+ }
+ .content p {
+   font-size: 20px;
+   line-height: 20px;
+   font-family: cursive;
+   word-spacing: 3px;
+ }
+ .content .linc {
+   height: 20px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+ }
+
+
+ @media(max-width: 767px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30px;
+  }
+  .row h1{
+    font-size: 30px;
+    line-height: 10px;
+    margin-bottom: 6px;
+    
+  }
+  .content{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .content small{
+    border: 3px solid white;
+    height: 60px;
+    border-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 200;
+    line-height: 23px ;
+    background-color: yellow;
+    padding-left: 280px;
+    text-transform: uppercase;
+    
+  }
+}
+ /* .rating h3{ 
+   display: inline-block;
+   padding: 20px;
+   text-align: center;
+   text-transform: uppercase;
+   flex: 
+ }
+ */

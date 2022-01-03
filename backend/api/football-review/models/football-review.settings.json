@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "football_reviews",
+  "info": {
+    "name": "football review",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "rating": {
+      "required": true,
+      "unique": false,
+      "private": false,
+      "min": 1,
+      "max": 10,
+      "type": "integer"
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
